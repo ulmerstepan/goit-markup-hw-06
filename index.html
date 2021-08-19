@@ -337,71 +337,74 @@
 
     <footer class="footer">
         <div class="container footer-container">
-        <div class="adress-box">
-
-            <a href="./index.html" class="link footer-logo logo"><span class="logo-color">Web</span>Studio</a>
-            <address class="address">
-                <ul class="address-list list">
-                    <li>г. Киев, пр-т Леси Украинки, 26</li>
-                    <li><a href="mailto:info@devstudio.com" class="link footer-contacts-link contacts-link">info@devstudio.com</a>
+            <div class="adress-box">
+    
+                <a href="./index.html" class="link footer-logo logo"><span class="logo-color">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="address-list list">
+                        <li>г. Киев, пр-т Леси Украинки, 26</li>
+                        <li><a href="mailto:info@devstudio.com"
+                                class="link footer-contacts-link contacts-link">info@devstudio.com</a>
+                        </li>
+                        <li><a href="tel:+380961111111" class="link footer-contacts-link contacts-link">+38 096 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="join_us-box">
+                <h2 class="footer-title title">присоеденяйтесь</h2>
+                <ul class="social-list footer_social-list list">
+                    <li class="social-item">
+                        <a href="" class="social-link footer_social-link link">
+                            <svg class="social-icon" width=20 height="20">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li><a href="tel:+380961111111" class="link footer-contacts-link contacts-link">+38 096 111 11 11</a></li>
+                    <li class="social-item">
+                        <a href="" class="social-link footer_social-link">
+                            <svg class="social-icon" width=20 height="20">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link footer_social-link">
+                            <svg class="social-icon" width=20 height="20">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link footer_social-link">
+                            <svg class="social-icon" width=20 height="20">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
+    
+            <div class="mailing-box">
+                <h2 class="footer-title title">Подпишитесь на рассылку</h2>
+                <form>
+    
+                    <input class="footer-input-mail" type="email" name="user-email" placeholder="E-mail"
+                        autocomplete="email">
+    
+                    <button type="submit" class="button mailing-btn">
+                        <div class="mailing-btn-box">
+                            Подписаться
+                            <svg class="send-icon" width=24 height="24">
+                                <use href="./images/symbol-defs.svg#send_icon"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+            </div>
         </div>
-
-        <div class="join_us-box">
-            <h2 class="footer-title title">присоеденяйтесь</h2>
-                        <ul class="social-list footer_social-list list">
-                            <li class="social-item">
-                                <a href="" class="social-link footer_social-link link">
-                                    <svg class="social-icon" width=20 height="20">
-                                        <use href="./images/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="" class="social-link footer_social-link">
-                                    <svg class="social-icon" width=20 height="20">
-                                        <use href="./images/symbol-defs.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="" class="social-link footer_social-link">
-                                    <svg class="social-icon" width=20 height="20">
-                                        <use href="./images/symbol-defs.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="" class="social-link footer_social-link">
-                                    <svg class="social-icon" width=20 height="20">
-                                        <use href="./images/symbol-defs.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-        </div>
-
-        <div class="mailing-box">
-            <h2 class="footer-title title">Подпишитесь на рассылку</h2>
-            <form class="js-speaker-form">
-            
-            <input class="footer-input-mail" type="email" name="user-email"  placeholder="E-mail" autocomplete="email">
-
-            <button type="submit" class="button mailing-btn">
-                <div class="mailing-btn-box">
-                    Подписаться
-                    <svg class="send-icon" width=24 height="24">
-                        <use href="./images/symbol-defs.svg#send_icon"></use>
-                    </svg>
-                </div>
-            </button>
-            </form>
-        </div>
-        </div>
-
+    
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -417,32 +420,32 @@
 
                     <label class="form-field">
                     <span class="form-label">Имя</span>
-                    <div class="input-box">
+                    <span class="input-box">
                         <input class="form-input" type="text" name="user-name" autofocus autocomplete="name">
                         <svg class="form-icon" width=12 height="12">
                             <use href="./images/symbol-defs.svg#name_icon"></use>
                         </svg>
-                    </div>
+                    </span>
                     </label>
 
                     <label class="form-field">
                         <span class="form-label">Телефон</span>
-                        <div class="input-box">
+                        <span class="input-box">
                             <input class="form-input" type="tel" name="user-tel" autocomplete="tel">
                             <svg class="form-icon" width=13 height="13">
                             <use href="./images/symbol-defs.svg#phone_icon"></use>
                             </svg>
-                        </div>
+                        </span>
                     </label>
 
                     <label class="form-field">
                     <span class="form-label">Почта</span>
-                    <div class="input-box">
+                    <span class="input-box">
                         <input class="form-input" type="email" name="user-email" autocomplete="email">
                         <svg class="form-icon" width=15 height="12">
                           <use href="./images/symbol-defs.svg#mail_icon"></use>
                         </svg>
-                    </div>
+                    </span>
                     </label>
 
                     <label class="form-field">
@@ -462,9 +465,8 @@
                         </span>
                     </label>
 
-                    <div class="btn-box">
-                        <button type="submit" class="button send-btn">Отправить</button>
-                    </div>
+                    <button type="submit" class="button send-btn">Отправить</button>
+
                 </form>
         </div>
     </div>

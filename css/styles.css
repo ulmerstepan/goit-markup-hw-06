@@ -22,7 +22,7 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -193,11 +193,8 @@ p {
 .button {
   border-radius: 4px;
   min-width: 200px;
-  /* padding: 10px 32px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: auto;
-  padding-right: auto;
+  padding: 10px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
@@ -422,6 +419,9 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.adress-box {
+  width: 231px;
+}
 .footer-logo {
   color: var(--accent-white-color);
   margin-bottom: 20px;
@@ -473,7 +473,7 @@ p {
 
 .footer-input-mail {
   display: inline-block;
-  min-width: 358px;
+  min-width: 354px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -537,7 +537,7 @@ p {
 }
 
 .portfolio-item {
-  margin-right: 30px;
+  margin-right: 26px;
   margin-bottom: 30px;
 
   background: var(--accent-white-color);
@@ -673,6 +673,7 @@ p {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 12px;
 }
 .form-field {
   display: flex;
@@ -702,13 +703,13 @@ p {
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:hover,
+
 .form-input:focus {
   border-color: var(--accent-text-color);
   outline: none;
   cursor: pointer;
 }
-.form-input:hover + .form-icon,
+
 .form-input:focus + .form-icon {
   fill: var(--accent-text-color);
 }
@@ -764,7 +765,8 @@ p {
   border: none;
   background-color: var(--accent-text-color);
 }
-.btn-box {
-  display: flex;
-  justify-content: center;
+.send-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
